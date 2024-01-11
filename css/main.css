@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1)
+}
+
+@font-face {
+    font-family: Tektur-3d;
+    src: url(../Fonts/Tektur-VariableFont_wdth\,wght.ttf);
+    font-weight: 400;
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Tektur-3d;
+}
+
+.Load {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.logo {
+    --logo-size: calc(var(--index) * 8);
+    width: var(--logo-size);
+    position: absolute;
+    height: var(--logo-size);
+    background-size: var(--logo-size); 
+    background-repeat: no-repeat;
+    left: calc(50% - calc(var(--logo-size) / 2));
+    top: calc(var(--index) * 2.8);
+    z-index: 1;
+}
+
+.layers {
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.layers__container {
+    height: 100vh;
+    min-height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
+}
+
+.layers__item {
+    position: absolute;
+    inset: -15vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-1 {
+    transform: translateZ(-155px); scale: (1.06);
+}
+
+.layer-2 {
+    transform: translateZ(80px) scale(.8);
+}
+
+.layer-3 {
+    transform: translateZ(120px) scale(.88);
+}
+
+.layer-4 {
+    transform: translateZ(180px) scale(.9);
+}
+
+.layer-5 {
+    transform: translateZ(380px) scale(.7);
+}
+
+.hero__content {
+    font-size: calc(var(--index) * .80);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * .2.5);
+    line-height: 2.5em;
+    margin-top: calc(var(--index) * -2);
+}
+
+
+.hero__content span {
+    display: block;
+}
+
+.button-start {
+    font-size: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: calc(var(--index) * .71);
+    letter-spacing: -0.01vw;
+    padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+    background-color: transparent;
+    color: white;
+    border-radius: 10em;
+    border: rgb(255 255 255 / .4) 3px solid;
+    outline: none;
+    cursor: pointer;
+    margin-top: calc(var(--index) * 6);
+}
+
+.button-start:hover {
+    border: rgba(17, 0, 255, 0.4) 3px solid;
+}
+
+
+.layer-4, .layer-5 {
+    pointer-events: none;
+}
