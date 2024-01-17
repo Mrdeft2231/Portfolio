@@ -11,7 +11,8 @@ a {
 }
 :root {
     --index: calc(1vw + 1vh);
-    --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1)
+    --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+    --logo-size: calc(var(--index) * 8);
 }
 
 @font-face {
@@ -21,7 +22,6 @@ a {
 }
 
 body {
-    background-color: black;
     color: rgb(255, 255, 255);
     font-family: Tektur-3d;
 }
@@ -35,7 +35,6 @@ body {
 }
 
 .logo {
-    --logo-size: calc(var(--index) * 8);
     width: var(--logo-size);
     position: absolute;
     height: var(--logo-size);
@@ -126,3 +125,41 @@ body {
 }
 
 /* Главная страница  */
+
+.header {
+background-color: rgb(17, 0, 255);
+
+
+}
+.content__header {
+display: flex;
+justify-content: space-between;
+}
+
+.header__logo {
+
+}
+
+.header__logo img {
+  width: calc(var(--index) * 6);
+  height: calc(var(--index) * 4);
+}
+
+.navigation {
+
+}
+
+.link {
+
+}
+
+.link img {
+  width: calc(var(--index) * 3);
+  height: calc(var(--index) * 3);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+ background-color: black;
+}
