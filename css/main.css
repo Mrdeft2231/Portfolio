@@ -128,12 +128,12 @@ body {
 
 .header {
 background-color: rgb(17, 0, 255);
-
+height: calc(var(--index) * 4.5)
 
 }
 .content__header {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 .header__logo {
@@ -156,10 +156,4 @@ justify-content: space-between;
 .link img {
   width: calc(var(--index) * 3);
   height: calc(var(--index) * 3);
-}
-
-main {
-  width: 100vw;
-  height: 100vh;
- background-color: black;
 }
