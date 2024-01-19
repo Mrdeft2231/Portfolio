@@ -128,12 +128,16 @@ body {
 
 .header {
 background-color: rgb(17, 0, 255);
+width: 100vw;
 height: calc(var(--index) * 4.5)
 
 }
 .content__header {
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
+align-items: center;
+width: 80vw;
+margin: 0 auto;
 }
 
 .header__logo {
@@ -147,6 +151,13 @@ justify-content: space-around;
 
 .navigation {
 
+
+}
+
+.navigation li, ul {
+    display: flex;
+    gap: 5vh;
+    list-style: none;
 }
 
 .link {
