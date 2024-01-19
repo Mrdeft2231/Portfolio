@@ -19,6 +19,19 @@ a {
     font-family: Tektur-3d;
     src: url(../Fonts/Tektur-VariableFont_wdth\,wght.ttf);
     font-weight: 400;
+    
+}
+
+@font-face {
+    font-family: Exo2-3d;
+    src: url(../Fonts/Exo2-Italic-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: PressStart2P-3d;
+    src: url(../Fonts/PressStart2P-Regular.ttf);
+    font-weight: 400;
 }
 
 body {
@@ -150,14 +163,34 @@ margin: 0 auto;
 }
 
 .navigation {
-
-
+border-bottom: 0.3vh solid black;
+border-left: 0.3vh solid black;
+border-right: 0.3vh solid black;
+padding: 5vh 10vh;
 }
 
 .navigation li, ul {
+    font-family: PressStart2P-3d;
+    font-size: calc(var(--index) * 0.60);
     display: flex;
-    gap: 5vh;
+    gap: 3vh;
     list-style: none;
+    
+}
+
+.list1 {
+border-right: 1px solid black;
+padding: 0 10px;
+}
+.list2 {
+border-right: 1px solid black;
+padding: 0 10px;
+}
+.list3 {
+border-right: 1px solid black;
+padding: 0 10px;
+}
+.list4 {
 }
 
 .link {
