@@ -166,7 +166,7 @@ margin: 0 auto;
 border-bottom: 0.3vh solid black;
 border-left: 0.3vh solid black;
 border-right: 0.3vh solid black;
-padding: 5vh 10vh;
+padding: 2vh 4vh;
 }
 
 .navigation li, ul {
@@ -179,15 +179,15 @@ padding: 5vh 10vh;
 }
 
 .list1 {
-border-right: 1px solid black;
+border-right: 0.3vh solid black;
 padding: 0 10px;
 }
 .list2 {
-border-right: 1px solid black;
+border-right: 0.3vh solid black;
 padding: 0 10px;
 }
 .list3 {
-border-right: 1px solid black;
+border-right: 0.3vh solid black;
 padding: 0 10px;
 }
 .list4 {
