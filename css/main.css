@@ -141,7 +141,7 @@ body {
 
 .header {
 background-color: rgb(17, 0, 255);
-width: 100vw;
+width: 100%;
 height: calc(var(--index) * 4.5)
 
 }
@@ -149,7 +149,7 @@ height: calc(var(--index) * 4.5)
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 80vw;
+max-width: 100%;
 margin: 0 auto;
 }
 
@@ -166,32 +166,36 @@ margin: 0 auto;
 border-bottom: 0.3vh solid black;
 border-left: 0.3vh solid black;
 border-right: 0.3vh solid black;
-padding: 2vh 4vh;
+padding: 0 2vh 0 2vh;
 }
 
 .navigation li, ul {
     font-family: PressStart2P-3d;
     font-size: calc(var(--index) * 0.60);
     display: flex;
-    gap: 3vh;
+    gap: 1vh;
     list-style: none;
     
 }
 
 .list1 {
 border-right: 0.3vh solid black;
-padding: 0 10px;
+padding: 1.5vh 2vh 0 1vh;
 }
 .list2 {
 border-right: 0.3vh solid black;
-padding: 0 10px;
+padding: 1.5vh 1vh 0 1vh;
 }
 .list3 {
 border-right: 0.3vh solid black;
-padding: 0 10px;
+padding: 1.5vh 1vh 0 1vh;
 }
 .list4 {
+  padding: 1vh 1vh 0 1vh;
+  margin: 0 0 2vh 0;
 }
+
+
 
 .link {
 
