@@ -211,55 +211,39 @@ padding: 2vh 1vh 0 1vh;
 }
 
 /* переключатель */
-
 .switch {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 1;
-    top: 4vh;
-    left: 200vh;
-    width: 8%;
-    height:  7vh;
-    border: 1.5vh solid #595656;;
-    border-radius: 2em;
-    box-shadow: 2px 3px 1.2px 2px #000;;
-}
-/* 111 */
-.cricle {
-    width: 30%;
-    height: 4.1vh;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5em;
-}
-.oval-1 {
-    position: absolute;
-    background-color: white;
-    width: 4%;
-    top: 0.9vh;
-    left:0.71vh;
-    gap: 6vh;
-    height: 2vh;
-    border-radius: 2em;
+  display: inline-block;
+  position: relative;
+  width: 4vw;
+  height: 4vh;
+  background-color: black;
+  border-radius: 2em;
 }
 
-.oval-2 {
-    position: absolute;
-    background-color: white;
-    width: 4%;
-    top: 0.9vh;
-    left: 1.7vh;
-    gap: 6vh;
-    height: 2vh;
-    border-radius: 2em;
+.switch_input {
+  height: 0;
+  width: 0;
+  opacity: 0;
 }
 
-.oval-3 {
-    position: absolute;
-    background-color: white;
-    width: 4%;
-    top: 0.9vh;
-    left: 2.7vh;
-    gap: 6vh;
-    height: 2vh;
-    border-radius: 2em;
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+  border: 0.5vh solid black;
 }
+
+.switch__slider::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  left: 0.5vh;
+  top: 0.2vh;
+  height: 2.9vh;
+  width: 3vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2em;
+}
+
