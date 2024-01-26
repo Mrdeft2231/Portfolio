@@ -140,7 +140,12 @@ body {
 /* Главная страница  */
 
 .header {
-background-color: rgb(255, 255, 255);
+position: fixed;
+z-index: 3;
+background: rgba(255, 255, 255, 0.16);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+-webkit-backdrop-filter: blur(5.7px);
 width: 100%;
 height: calc(var(--index) * 4.5)
 
@@ -265,17 +270,17 @@ padding: 2vh 1vh 0 1vh;
 
 /* Основа */
 
-
 .contet__main {
   width: 100%;
   min-height: 100vh;
   transform-style: preserve-3d;
 }
 
+
 .content__background {
   perspective: 1px;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   transform-style: inherit;
 }
 
@@ -284,10 +289,13 @@ padding: 2vh 1vh 0 1vh;
   display: block;
   position: absolute;
   inset: 0;
+  top: -10vh;
   z-index: -1;
   transform-origin: center;
   min-height: 100vh;
-  background-image: url(../image/Paralax.png);
+  background-image: url(../image/bacground-test.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   transition: 1s;
   transform: translateZ(-1px) scale(2);
@@ -320,7 +328,7 @@ bottom: 0;
   background-repeat: no-repeat;
   background-size: var(--logo-size);
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   top: 70vh;
   left: 150vh;
   right: 0;
