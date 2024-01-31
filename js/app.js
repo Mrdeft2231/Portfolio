@@ -14,3 +14,19 @@ document.addEventListener('mousemove', e => {
         `
     })
 })
+
+// window.addEventListener('scroll', function () {
+//   const scrollPosition = this.window.scrollY;
+//   console.log(scrollPosition)
+// });
+// слежка за видимостью объекта
+let observer = new IntersectionObserver(function (enteries) {
+  enteries.forEach(function (entry) {
+    console.log(entry.target);
+    console.log(entry.isIntersecting);
+  });
+});
+
+let el = document.querySelector('.charpter-1');
+
+observer.observe(el);

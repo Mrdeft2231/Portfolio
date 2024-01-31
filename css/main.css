@@ -224,7 +224,7 @@ padding: 2vh 1vh 0 1vh;
   width: 80px;
   height: 38px ;
   background-color: black;
-  border-radius: 2em;
+  border-radius: 160px;
 }
 
 .switch_input {
@@ -238,7 +238,7 @@ padding: 2vh 1vh 0 1vh;
   cursor: pointer;
   inset: 0;
   background-color: rgb(255, 255, 255);
-  border-radius: 2em;
+  border-radius: 160px;
   border: 6px solid black;
 }
 
@@ -246,12 +246,12 @@ padding: 2vh 1vh 0 1vh;
   content: "";
   position: absolute;
   cursor: pointer;
-  left: 0.1vh;
-  top: 0.1vh;
+  left: 1px;
+  top: 1px;
   height: 24px;
   width: 24px;
   background-color: rgb(0, 0, 0);
-  border-radius: 2em;
+  border-radius: 160px;
 }
 
 .switch_input + .switch__slider {
@@ -300,40 +300,6 @@ padding: 2vh 1vh 0 1vh;
   transition: 1s;
   transform: translateZ(-1px) scale(2);
 }
-
-.content__background-img-1 {
-background-repeat: no-repeat;
-background-size: var(--logo-size);
-position: absolute;
-z-index: 1;
-top: 70vh;
-left: 40vh;
-right: 0;
-bottom: 0;
-
-}
-
-.content__background-img-2 {
-  background-repeat: no-repeat;
-  background-size: var(--logo-size);
-  position: absolute;
-  z-index: 2;
-  top: 30vh;
-  left: 90vh;
-  right: 0;
-  bottom: 0;
-}
-
-.content__background-img-3 {
-  background-repeat: no-repeat;
-  background-size: var(--logo-size);
-  position: absolute;
-  z-index: 2;
-  top: 70vh;
-  left: 150vh;
-  right: 0;
-  bottom: 0;
-} 
 
 .chapter-1 {
   width: 100%;
