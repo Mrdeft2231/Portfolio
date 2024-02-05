@@ -37,7 +37,9 @@ a {
 body {
     color: rgb(255, 255, 255);
     font-family: Tektur-3d;
+    overflow-x: hidden;
 }
+
 
 .Load {
     position: absolute;
@@ -158,9 +160,7 @@ width: 100%;
 margin: 0 auto;
 }
 
-.header__logo {
 
-}
 
 .header__logo img {
   width: calc(var(--index) * 6);
@@ -305,4 +305,124 @@ padding: 2vh 1vh 0 1vh;
   width: 100%;
   height: 100vh;
   background: linear-gradient(105deg, #E4D2D2 0%, #D3E2FF 79.14%, #FFF 100%);
+}
+
+.li {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+  0 0 0 8px rgba(255, 255, 255, 0.1),
+  0 0 20px rgba(255,255,255,1);
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-100vh);
+    opacity: 0;
+  }
+}
+
+.li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #FFF, 
+  transparent);
+}
+
+.li-1 {
+  top: 0;
+  right: 0;
+  left: 50%;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+.li-2 {
+  top: 0;
+  right: 80px;
+  left: 40%;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+.li-3 {
+  top: 80px;
+  right: 0px;
+  left: 30%;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+.li-4 {
+  top: 0;
+  right: 400px;
+  left: 20%;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+.li-5 {
+  top: 0px;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+.li-6 {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+.li-7 {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
+}
+.li-8 {
+  top: 0;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+.li-9 {
+  top: 300px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+.li-10 {
+  top: 0;
+  right: 450px;
+  left: initial;
+  animation-delay: 2.75;
+  animation-duration: 2.25s;
 }
