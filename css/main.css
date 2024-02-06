@@ -188,17 +188,39 @@ padding: 0 2vh 0 2vh;
 border-right: 0.3vh solid black;
 padding: 2vh 2vh 0 1vh;
 }
+
+.list1 li:hover {
+  color: rgb(255, 29, 29);
+  -webkit-box-shadow: 1px 52px 71px 10px rgba(251, 61, 61, 0.84);
+-moz-box-shadow: 1px 52px 71px 10px rgba(251, 61, 61, 0.84);
+box-shadow: 1px 52px 71px 10px rgba(251, 61, 61, 0.84);
+}
+
 .list2 {
 border-right: 0.3vh solid black;
 padding: 2vh 1vh 0 1vh;
 }
+
+.list2 li:hover {
+  color: rgb(0, 171, 250);
+}
+
 .list3 {
 border-right: 0.3vh solid black;
 padding: 2vh 1vh 0 1vh;
 }
+
+.list3 li:hover {
+  color: rgb(0, 17, 255);
+}
+
 .list4 {
   padding: 1vh 1vh 0 1vh;
   margin: 0 0 1vh 0;
+}
+
+.list4 li:hover {
+  color: rgb(0, 255, 42);
 }
 
 .link {
