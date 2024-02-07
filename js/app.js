@@ -15,18 +15,25 @@ document.addEventListener('mousemove', e => {
     })
 })
 
-// window.addEventListener('scroll', function () {
-//   const scrollPosition = this.window.scrollY;
-//   console.log(scrollPosition)
-// });
-// слежка за видимостью объекта
-let observer = new IntersectionObserver(function (enteries) {
-  enteries.forEach(function (entry) {
-    console.log(entry.target);
-    console.log(entry.isIntersecting);
-  });
-});
+let elementHeader = document.querySelector('.header');
 
-let el = document.querySelector('.charpter-1');
+let elementChapter = document.getElementById('cp-1');
 
-observer.observe(el);
+elementHeader.addEventListener('change', function() {
+  
+  if(isElementVisible(elementChapter)) {
+    elementHeader.disabled = true;
+  }
+})
+
+function isElementVisible(element) {
+  let rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 20 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
