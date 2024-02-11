@@ -14,26 +14,3 @@ document.addEventListener('mousemove', e => {
         `
     })
 })
-
-let elementHeader = document.querySelector('.header');
-
-let elementChapter = document.getElementById('cp-1');
-
-elementHeader.addEventListener('change', function() {
-  
-  if(isElementVisible(elementChapter)) {
-    elementHeader.disabled = true;
-  }
-})
-
-function isElementVisible(element) {
-  let rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 20 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-
