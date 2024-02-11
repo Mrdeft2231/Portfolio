@@ -1,3 +1,4 @@
+
 const elementHeader = document.querySelector(".header");
 const elementChapter = document.querySelector(".chapter");
 
@@ -7,4 +8,10 @@ window.addEventListener("scroll", function() {
   } else {
     elementHeader.classList.remove("hidden");
   }
+});
+
+$('.image-chapter').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04
 });
