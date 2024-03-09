@@ -712,10 +712,10 @@ transition: all .3s;
       opacity: 1;
       transform: none;
 
-    @for $i from 0 to 15 {
+    /* @for $i from 0 to 15 {
       &:nth-child(#{$i + 1}) {
         transition-delay: $i * 0.1 + 0.3s;
-      }
+      } */
     }
 
   }
@@ -725,7 +725,7 @@ transition: all .3s;
 }
 
 &__img {
-   // width: 40%;
+   width: 40%;
   width: 300px;
   flex-shrink: 0;
   height: 300px;
@@ -760,7 +760,7 @@ transition: all .3s;
   
   
   @media screen and (max-width: 992px) {
-    // width: 45%;
+     width: 45%;
   }
   @media screen and (max-width: 768px) {
   transform: translateY(-50%);
@@ -775,10 +775,10 @@ transition: all .3s;
 }
 
 &__content {
-  // width: 60%;
+   width: 60%;
   padding-right: 25px;
   @media screen and (max-width: 992px) {
-    // width: 55%;
+    width: 55%;
   }
   @media screen and (max-width: 768px) {
         margin-top: -80px;
