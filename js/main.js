@@ -9,9 +9,3 @@ window.addEventListener("scroll", function() {
     elementHeader.classList.remove("hidden");
   }
 });
-
-$('.image-chapter').ripples({
-  resolution: 256,
-  dropRadius: 20,
-  perturbance: 0.04
-});
