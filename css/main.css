@@ -668,6 +668,7 @@ flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 1% 0 1% 0;
   gap: 2%;
 }
 
@@ -748,4 +749,35 @@ flex-direction: column;
  } to {
    opacity: 0;
  }
+}
+
+/* ссылки на контакты */
+
+
+.transition__footer {
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(94, 104, 122);
+}
+
+.footer__container {
+  width: 100%;
+  height: 100%;
+}
+
+.g {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5%;
+}
+
+.footer-img {
+  width: 100%;
+  height: 100%;
+  width: calc(var(--index) * 3);
+  height: calc(var(--index) * 2.4);
+  border-radius: 2em;
 }
