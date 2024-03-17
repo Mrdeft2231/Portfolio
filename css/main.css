@@ -40,6 +40,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none;
 }
@@ -47,7 +51,7 @@ body {
 
 .Load {
     position: absolute;
-    z-index: 2;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -319,6 +323,61 @@ padding: 2vh 1vh 0 1vh;
 }
 
 /* Основа */
+/* навигация */
+
+#nav__hidden {
+  display: none;
+}
+
+.nav__fixed {
+  position: fixed;
+  z-index: 10;
+  right: 1.5%;
+  top: 35%;
+  background: rgba(0, 174, 255, 0.342);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border-radius: 2em;
+  width: 8vh;
+  height: 35vh;
+  border: 0.3vh black solid;
+}
+
+.nav__fixed-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+.nav__fixed-list img {
+  width: 5vh;
+  height: 4.5vh;
+}
+
+.fixed-1:hover {
+  padding-bottom: 0.4vh;
+  border-bottom: 0.3vh rgb(255, 29, 29) solid;
+}
+
+.fixed-2:hover {
+  padding-bottom: 0.4vh;
+  border-bottom: 0.3vh rgb(0, 171, 250) solid;
+}
+
+.fixed-3:hover {
+  padding-bottom: 0.4vh;
+  border-bottom: 0.3vh rgb(255, 0, 64) solid;
+}
+
+.fixed-4:hover {
+  padding-bottom: 0.4vh;
+  border-bottom: 0.3vh rgb(0, 255, 42) solid;
+}
 
 .contet__main {
   width: 100%;
@@ -525,7 +584,11 @@ flex-direction: column;
 .image-chapter {
   display: flex;
   align-items: center;
+}
 
+.image-chapter img {
+  width: calc(var(--index) * 30);
+  height: calc(var(--index) * 30);
 }
 
 .transition {
@@ -593,22 +656,40 @@ flex-direction: column;
   border: 2px solid black;
 }
 
+.table p {
+  font-size: calc(var(--index) * 0.55)
+}
+
 
 .AboutTheSite__text-1 {
   top: 5%;
   left: 10%;
   border-radius: 88px;
   width: 25%;
-  height: 15vh;
+  height: 10vh;
+  -webkit-box-shadow: -11px 5px 5px 0px rgba(250,217,0,1);
+  -moz-box-shadow: -11px 5px 5px 0px rgba(250,217,0,1);
+  box-shadow: -11px 5px 5px 0px rgba(250,217,0,1);
 }
 
 .AboutTheSite__text-2 {
+  position: relative;
   top: 15%;
   left: 40%;
   border-radius: 37px;
   width: 25%;
   height: 10vh;
+  
 }
+
+.AboutTheSite__text-2 img {
+  position: absolute;
+  top: -96%;
+  left: 60%;
+  width: calc(var(--index) * 4);
+  height: calc(var(--index) * 4);
+}
+
 
 .AboutTheSite__text-3 {
   top: 25%;
@@ -640,6 +721,11 @@ flex-direction: column;
   border-radius: 70%;
   width: 25%;
   height: 20vh;
+}
+
+.gif img {
+  width: calc(var(--index) * 15);
+  height: calc(var(--index) * 15);
 }
 
 /* Мои работы */
@@ -697,7 +783,7 @@ flex-direction: column;
 .card__image img {
   border-bottom: 2px rgb(161, 161, 161) solid;
   width: 100%;
-  height: 90%;
+  height: 35vh;
 }
 
 .card__text {
@@ -708,6 +794,8 @@ flex-direction: column;
   color: black;
   text-align: center;
 }
+
+
 
 .card__text h3 {
   color: black;
@@ -776,10 +864,18 @@ flex-direction: column;
   gap: 5%;
 }
 
+.g h2 {
+  color: black;
+}
+
+.g a:hover {
+  border-bottom: black 0.6vh solid;
+}
+
 .footer-img {
   width: 100%;
   height: 100%;
-  width: calc(var(--index) * 3);
+  width: calc(var(--index) * 2);
   height: calc(var(--index) * 2);
   border-radius: 2em;
 }
