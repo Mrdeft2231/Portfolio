@@ -9,8 +9,16 @@ window.addEventListener("scroll", function() {
     elementHeader.classList.add("hidden");
     elementNavigation.classList.remove("hidden");
     this.document.getElementById("nav__hidden").style.display = "block";
+
+
   } else {
     this.document.getElementById("nav__hidden").style.display = "none";
     elementHeader.classList.remove("hidden");
   }
 });
+
+const observer = new IntersectionObserver((entries) => {
+  if ()
+})
+
+const elementImg = document.querySelector(".image-chapter");

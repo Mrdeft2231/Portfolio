@@ -588,7 +588,7 @@ flex-direction: column;
 
 .image-chapter img {
   width: calc(var(--index) * 30);
-  height: calc(var(--index) * 30);
+  height: calc(var(--index) * 27);
 }
 
 .transition {
@@ -893,4 +893,29 @@ flex-direction: column;
   width: calc(var(--index) * 2);
   height: calc(var(--index) * 2);
   border-radius: 2em;
+}
+
+/* анимация */
+
+@keyframes animtaion-blocks {
+  0% {
+    opacity: 0;
+    transform:translateX(500px)
+  }
+}
+
+@keyframes animtaion-blocks-2 {
+  0% {
+    opacity: 0;
+    transform:translateX(-500px)
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animation-block {
+   animation: animtaion-blocks 2s infinite;
+  }
+  .animation-block-2 {
+    animation: animtaion-blocks-2 2s 1;
+  }
 }
