@@ -17,8 +17,20 @@ window.addEventListener("scroll", function() {
   }
 });
 
-const observer = new IntersectionObserver((entries) => {
-  if ()
-})
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Если элемент видим, добавить класс или стили для анимации
+      entry.target.classList.add('.animation-block');
+    } else {
+      // Если элемент скрыт, удалить класс или стили анимации
+      entry.target.classList.remove('.animation-block');
+    }
+  });
+}, { threshold: 0.5 }); // Установка порога видимости в 0.5
 
-const elementImg = document.querySelector(".image-chapter");
+// Получение целевого элемента
+const targetElement = document.querySelector('.description');
+
+// Привязка наблюдателя к целевому элементу
+observer.observe(targetElement);
