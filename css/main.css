@@ -911,13 +911,35 @@ flex-direction: column;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .description {
-    display: none;
-   animation: animtaion-blocks 2s infinite;
+@keyframes animation-blocks-3 {
+  0% {
+    opacity: 0;
+    transform:translateY(-100%)
   }
+  
+}
+@keyframes animation-blocks-4 {
+  0% {
+    opacity: 0;
+    transform:translateX(-100%)
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .image-chapter {
     display: none;
+    animation: animtaion-blocks 2s 1;
+  }
+  .description {
+    display: none;
     animation: animtaion-blocks-2 2s 1;
+  }
+  .table {
+    display: none;
+    animation: animation-blocks-3 2s 1;
+  }
+  .gif {
+    display: none;
+    animation: animation-blocks-4 2s 1;
   }
 }

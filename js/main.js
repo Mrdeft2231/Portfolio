@@ -17,20 +17,33 @@ window.addEventListener("scroll", function() {
   }
 });
 
-let options = {
-  threshold: [0.5]
-};
 
  const ainimateObserver = new IntersectionObserver((entries, observer) => {
-  console.log(observer)
-  console.log("вижу объект")
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target = document.querySelector('.description').style.display = "block";
+      entry.target = document.querySelector('.image-chapter').style.display = "block";
+     }
+  })   
  },
  {
    threshold: 0.5
- }
- )
+ });
 
-let target = document.querySelector(".chapter__main");
-target = ainimateObserver.observe(target)
-let textChapter = document.querySelector('.chapter__text');
-let imgChapter = document.querySelector('.chapter__image');
+let target = document.querySelector('.chapter__main');
+target = ainimateObserver.observe(target);
+
+const animateAboutTheSite = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target = document.querySelectorAll('.table').style.display = "flex";
+
+      entry.target = document.querySelector('.gif').style.display = "block";
+     }
+  })
+}, {
+  threshold: 0.5
+})
+
+animateAboutTheSite.observe(document.querySelector('.AboutTheSite'))
+
