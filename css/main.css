@@ -912,10 +912,12 @@ flex-direction: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .animation-block {
+  .description {
+    display: none;
    animation: animtaion-blocks 2s infinite;
   }
-  .animation-block-2 {
+  .image-chapter {
+    display: none;
     animation: animtaion-blocks-2 2s 1;
   }
 }

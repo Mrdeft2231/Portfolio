@@ -17,20 +17,17 @@ window.addEventListener("scroll", function() {
   }
 });
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Если элемент видим, добавить класс или стили для анимации
-      entry.target.classList.add('.animation-block');
-    } else {
-      // Если элемент скрыт, удалить класс или стили анимации
-      entry.target.classList.remove('.animation-block');
-    }
-  });
-}, { threshold: 0.5 }); // Установка порога видимости в 0.5
+let options = {
+  threshold: [0.5]
+};
 
-// Получение целевого элемента
-const targetElement = document.querySelector('.description');
+ const ainimateObserver = new IntersectionObserver((entries, observer) => {
+  console.log(observer)
+ },
+ {}
+ )
 
-// Привязка наблюдателя к целевому элементу
-observer.observe(targetElement);
+let target = document.querySelector(".chapter__main");
+target = ainimateObserver.observe(target)
+let textChapter = document.querySelector('.chapter__text');
+let imgChapter = document.querySelector('.chapter__image');
