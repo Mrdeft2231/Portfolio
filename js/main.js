@@ -23,8 +23,11 @@ let options = {
 
  const ainimateObserver = new IntersectionObserver((entries, observer) => {
   console.log(observer)
+  console.log("вижу объект")
  },
- {}
+ {
+   threshold: 0.5
+ }
  )
 
 let target = document.querySelector(".chapter__main");
