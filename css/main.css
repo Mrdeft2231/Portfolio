@@ -1260,3 +1260,21 @@ flex-direction: column;
       }
       
 }
+
+@media (max-width: 400px) {
+  .navigation li, ul {
+    font-size: calc(var(--index) * 0.71);
+  }
+  .gif img {
+    width: calc(var(--index) * 14);
+    height: calc(var(--index) * 14);
+  }
+  .gif {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .card__text h3 {
+    font-size: calc(var(--index) * 1.5);
+  }
+}
