@@ -983,6 +983,9 @@ flex-direction: column;
 }
 
 @media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
   /* хедер  */
   .header {
     height: 20vh;
