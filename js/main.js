@@ -22,7 +22,7 @@ window.addEventListener("scroll", function() {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target = document.querySelector('.description').style.display = "block";
-      entry.target = document.querySelector('.image-chapter').style.display = "block";
+      entry.target = document.querySelector('.image-chapter').style.display = "flex";
      }
   })   
  },
@@ -36,9 +36,8 @@ target = ainimateObserver.observe(target);
 const animateAboutTheSite = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target = document.querySelectorAll('.table').style.display = "flex";
-
       entry.target = document.querySelector('.gif').style.display = "block";
+      entry.target = document.querySelector('.AboutTheSite__text').style.display = "flex";
      }
   })
 }, {
@@ -46,4 +45,3 @@ const animateAboutTheSite = new IntersectionObserver((entries, observer) => {
 })
 
 animateAboutTheSite.observe(document.querySelector('.AboutTheSite'))
-
