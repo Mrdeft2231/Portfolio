@@ -1202,14 +1202,16 @@ flex-direction: column;
   
     .AboutTheSite__text-3 {
       top: 25%;
-      left: 5%;
+      left: 25%;
       width: 50%;
       height: 10vh;
     }
   
     .AboutTheSite__text-4 {
-      top: 20%;
-      width: 60%;
+      top: 37%;
+      left: 48%;
+      border-radius: 0%;
+      width: 40%;
       height: 28vh;
     }
   
@@ -1231,7 +1233,30 @@ flex-direction: column;
       height: calc(var(--index) * 20);
     }
     .AboutTheSite__text {
-      height: 100% ;
+      height: 90% ;
     }
-  
+
+    /* мои работы */
+
+    .wrapper__card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10% 0 0% 0;
+      gap: 2%;
+    }
+
+    .card {
+      width: 48%;
+      height: 100%;
+      margin-bottom: 20%;
+      }
+
+      .card__image img {
+
+        height: 26vh;
+      }
+      
 }
