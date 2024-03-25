@@ -1148,5 +1148,90 @@ flex-direction: column;
     height: calc(var(--index) * 3.5);
   }
 
+  /* Обо мне  */
+  .chapter { 
+    flex-direction: column;
+  }
+
+  .text-chapter p {
+    margin: 2% 0 2% 0;
+    font-size: calc(var(--index) * 1.42);
+  }
+
+
+  /* О сайте  */
+  .AboutTheSite {
+    padding: 0;
+  }
+
+  .AboutTheSite__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .AboutTheSite__title h2 {
+    font-size: calc(var(--index) * 2.5);
+    }
+    .hr2 {
+      width: 25vh;
+    }
+  
+    .table p {
+      font-size: calc(var(--index) * 1.1)
+    }
+  
+    .AboutTheSite__text-1 {
+      left: 10%;
+      width: 45%;
+      height: 15vh;
+    }
+  
+    .AboutTheSite__text-2 {
+      top: 7%;
+      left: 65%;
+      width: 35%;
+      height: 10vh;
+    }
+  
+    .AboutTheSite__text-2 img {
+      height: calc(var(--index) * 5);
+      width: calc(var(--index) * 5);
+    height: calc(var(--index) * 5);
+    }
+  
+  
+    .AboutTheSite__text-3 {
+      top: 25%;
+      left: 5%;
+      width: 50%;
+      height: 10vh;
+    }
+  
+    .AboutTheSite__text-4 {
+      top: 20%;
+      width: 60%;
+      height: 28vh;
+    }
+  
+    .AboutTheSite__text-5 {
+      top: 70%;
+      left: 40%;
+      width: 45%;
+      height: 20vh;
+    }
+  
+    .AboutTheSite__text-6 {
+      width: 30%;
+      left: 2%;
+      height: 19vh;
+    }
+  
+    .gif img {
+      width: calc(var(--index) * 17);
+      height: calc(var(--index) * 20);
+    }
+    .AboutTheSite__text {
+      height: 100% ;
+    }
   
 }
