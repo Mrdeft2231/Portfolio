@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 a {
@@ -43,6 +42,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -915,7 +915,6 @@ flex-direction: column;
     margin-top: 15%;
     font-size: calc(var(--index) * 1.2);
     align-items: center;
-    color: black;
   }
   .image-chapter img {
     width: calc(var(--index) * 27);
@@ -983,7 +982,8 @@ flex-direction: column;
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+  /* хедер  */
   .header {
     height: 20vh;
    }
@@ -994,12 +994,156 @@ flex-direction: column;
   }
 
   .navigation li, ul {
-    font-size: calc(var(--index) * 0.70);
+    font-size: calc(var(--index) * 0.80);
   }
 
   .link img {
-    width: calc(var(--index) * 2.8);
+    width: calc(var(--index) * 3);
     height: calc(var(--index) * 2.5);
   }
+  /* обо мне  */
+  .hr1 {
+    width: 25vh;
+  }
+  .text-chapter h2 {
+    font-size: calc(var(--index) * 2.5);
+  }
+  .text-chapter p {
+    margin-top: 5%;
+    font-size: calc(var(--index) * 1.30);
+  }
+  .image-chapter img {
+    width: calc(var(--index) * 30);
+    height: calc(var(--index) * 30);
+  }
 
+  /* О сайте  */
+  .AboutTheSite__title h2 {
+  font-size: calc(var(--index) * 2.5);
+  }
+  .hr2 {
+    width: 25vh;
+  }
+
+  .table p {
+    font-size: calc(var(--index) * 1.1)
+  }
+
+  .AboutTheSite__text-1 {
+    left: 0%;
+    width: 35%;
+    height: 15vh;
+  }
+
+  .AboutTheSite__text-2 {
+    top: 10%;
+    width: 30%;
+    height: 10vh;
+  }
+
+  .AboutTheSite__text-2 img {
+    height: calc(var(--index) * 5);
+    width: calc(var(--index) * 5);
+  height: calc(var(--index) * 5);
+  }
+
+
+  .AboutTheSite__text-3 {
+    top: 20%;
+    left: 68%;
+    width: 35%;
+    height: 20vh;
+  }
+
+  .AboutTheSite__text-4 {
+    top: 40%;
+    width: 40%;
+    height: 28vh;
+  }
+
+  .AboutTheSite__text-5 {
+    top: 60%;
+    left: 75%;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .AboutTheSite__text-6 {
+    width: 30%;
+    height: 19vh;
+  }
+
+  .gif img {
+    width: calc(var(--index) * 17);
+    height: calc(var(--index) * 20);
+  }
+
+
+  /* Навигация  */
+
+  .nav__fixed {
+    right: 1%;
+  }
+
+  /* Мои работы  */
+
+  .project__text h2 {
+    font-size: calc(var(--index) * 2.5);
+  }
+  .hr3 {
+    width: 37vh;
+  }
+
+  .card {
+  width: 40%;
+  height: 100%;
+  margin-bottom: 2%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 40vh;
+   }
+
+   .content__header {
+    flex-direction: column;
+   }
+
+   .header__logo img {
+    width: calc(var(--index) * 14);
+    height: calc(var(--index) * 10);
+  }
+
+  .navigation {
+    border-bottom: 0.1vh solid black;
+    border-left: 0.1vh solid black;
+    border-right: 0.1vh solid black;
+    padding: 0 1vh 0 1vh;
+    }
+
+  .navigation li, ul {
+    font-size: calc(var(--index) * 0.85);
+  }
+
+  .list1 {
+    border-right: 0.1vh solid black;
+    }
+
+    .list2 {
+      border-right: 0.1vh solid black;
+    }
+
+    .list3 {
+      border-right: 0.1vh solid black;
+      padding: 2vh 1vh 0 1vh;
+    }
+
+  .link img {
+    width: calc(var(--index) * 4);
+    height: calc(var(--index) * 3.5);
+  }
+
+  
 }
